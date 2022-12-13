@@ -1,4 +1,15 @@
-import { Button, ButtonGroup, Checkbox, Fab } from "@mui/material";
+import {
+  Button,
+  ButtonGroup,
+  Checkbox,
+  Fab,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  Radio,
+  RadioGroup,
+  Slider,
+} from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
@@ -66,7 +77,10 @@ export const App = () => {
         <DeleteIcon fontSize="inherit" />
       </IconButton>
       <br />
-      <ButtonGroup variant="contained" aria-label="outlined primary button group">
+      <ButtonGroup
+        variant="contained"
+        aria-label="outlined primary button group"
+      >
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
@@ -91,12 +105,30 @@ export const App = () => {
         <FavoriteIcon />
       </Fab>
       <br />
+      <FormControl>
+        <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+        <RadioGroup
+          aria-labelledby="demo-radio-buttons-group-label"
+          defaultValue="female"
+          name="radio-buttons-group"
+        >
+          <FormControlLabel value="female" control={<Radio />} label="Female" />
+          <FormControlLabel value="male" control={<Radio />} label="Male" />
+          <FormControlLabel value="other" control={<Radio />} label="Other" />
+        </RadioGroup>
+      </FormControl>
+      <br />
+      <Slider
+        size="small"
+        defaultValue={70}
+        aria-label="Small"
+        valueLabelDisplay="auto"
+      />
+      <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" />
       <br />
       <br />
       <br />
       <br />
-      <br />
-      
     </div>
   );
 };
