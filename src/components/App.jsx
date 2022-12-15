@@ -5,10 +5,12 @@ import {
   Fab,
   FormControl,
   FormControlLabel,
+  FormGroup,
   FormLabel,
   Radio,
   RadioGroup,
   Slider,
+  Switch,
 } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -125,6 +127,23 @@ export const App = () => {
         valueLabelDisplay="auto"
       />
       <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" />
+      <br />
+      <Switch {...label} defaultChecked />
+      <Switch {...label} />
+      <Switch {...label} disabled defaultChecked />
+      <Switch {...label} disabled />
+      <Switch {...label} defaultChecked color="secondary" />
+      <Switch {...label} defaultChecked color="warning" />
+      <Switch {...label} defaultChecked color="default" />
+      <br />
+      <FormGroup>
+        <FormControlLabel control={<Switch defaultChecked />} label="Label" />
+        <FormControlLabel disabled control={<Switch />} label="Disabled" />
+      </FormGroup>
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
