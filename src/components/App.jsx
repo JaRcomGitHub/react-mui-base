@@ -11,6 +11,8 @@ import {
   RadioGroup,
   Slider,
   Switch,
+  ToggleButtonGroup,
+  ToggleButton,
 } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -141,6 +143,17 @@ export const App = () => {
         <FormControlLabel disabled control={<Switch />} label="Disabled" />
       </FormGroup>
       <br />
+      <ToggleButtonGroup
+        color="primary"
+        value="center"
+        exclusive
+        // onChange={handleChange}
+        aria-label="Platform"
+      >
+        <ToggleButton value="web">Web</ToggleButton>
+        <ToggleButton value="android">Android</ToggleButton>
+        <ToggleButton value="ios">iOS</ToggleButton>
+      </ToggleButtonGroup>
       <br />
       <br />
       <br />
