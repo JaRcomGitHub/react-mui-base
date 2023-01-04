@@ -13,6 +13,7 @@ import {
   Switch,
   ToggleButtonGroup,
   ToggleButton,
+  Avatar,
 } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -23,6 +24,7 @@ import AddIcon from '@mui/icons-material/Add';
 import EditIcon from '@mui/icons-material/Edit';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { deepOrange, deepPurple } from '@mui/material/colors';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -154,6 +156,25 @@ export const App = () => {
         <ToggleButton value="android">Android</ToggleButton>
         <ToggleButton value="ios">iOS</ToggleButton>
       </ToggleButtonGroup>
+      <br />
+      <div style={{ display: 'flex', gap: 10 }}>
+        <Avatar variant="square">H</Avatar>
+        <Avatar sx={{ bgcolor: deepOrange[500] }} variant="rounded">
+          N
+        </Avatar>
+        <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
