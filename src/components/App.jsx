@@ -14,6 +14,7 @@ import {
   ToggleButtonGroup,
   ToggleButton,
   Avatar,
+  Badge,
 } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -25,6 +26,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { deepOrange, deepPurple } from '@mui/material/colors';
+import { Mail } from '@mui/icons-material';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -165,6 +167,17 @@ export const App = () => {
         <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
       </div>
       <br />
+      <div style={{ display: 'flex', gap: 10 }}>
+        <Badge badgeContent={4} color="primary">
+          <Mail color="action" />
+        </Badge>
+        <Badge badgeContent={4} color="secondary">
+          <Mail color="action" />
+        </Badge>
+        <Badge badgeContent={4} color="success">
+          <Mail color="action" />
+        </Badge>
+      </div>
       <br />
       <br />
       <br />
