@@ -15,6 +15,7 @@ import {
   ToggleButton,
   Avatar,
   Badge,
+  Chip,
 } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -31,6 +32,8 @@ import { Mail } from '@mui/icons-material';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 export const App = () => {
+  const handleClick = () => ({});
+
   return (
     <div>
       <h1>React mui base</h1>
@@ -179,6 +182,12 @@ export const App = () => {
         </Badge>
       </div>
       <br />
+      <div style={{ display: 'flex', gap: 10 }}>
+        <Chip label="Chip Filled" size="small" />
+        <Chip label="Chip Outlined" variant="outlined" icon={<EditIcon />} />
+        <Chip label="Clickable" onClick={handleClick} color="success" />
+        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
+      </div>
       <br />
       <br />
       <br />
