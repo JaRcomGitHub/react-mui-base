@@ -16,6 +16,11 @@ import {
   Avatar,
   Badge,
   Chip,
+  List,
+  ListItem,
+  ListItemText,
+  Divider,
+  Box,
 } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -29,7 +34,19 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { deepOrange, deepPurple } from '@mui/material/colors';
 import { Mail } from '@mui/icons-material';
 
+import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignLeft';
+import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
+import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
+const style = {
+  width: '100%',
+  maxWidth: 360,
+  bgcolor: 'background.paper',
+};
 
 export const App = () => {
   const handleClick = () => ({});
@@ -189,7 +206,50 @@ export const App = () => {
         <Chip label="Clickable" variant="outlined" onClick={handleClick} />
       </div>
       <br />
+      <List sx={style} component="nav" aria-label="mailbox folders">
+        <ListItem button>
+          <EditIcon />
+          <ListItemText primary="Inbox" />
+        </ListItem>
+        <Divider />
+        <ListItem button divider>
+          <ListItemText primary="Drafts" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Trash" />
+        </ListItem>
+        <Divider light />
+        <ListItem button>
+          <ListItemText primary="Spam" />
+        </ListItem>
+      </List>
       <br />
+      <div>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            width: 'fit-content',
+            border: theme => `1px solid ${theme.palette.divider}`,
+            borderRadius: 1,
+            bgcolor: 'background.paper',
+            color: 'text.secondary',
+            '& svg': {
+              m: 1.5,
+            },
+            '& hr': {
+              mx: 0.5,
+            },
+          }}
+        >
+          <FormatAlignLeftIcon />
+          <FormatAlignCenterIcon />
+          <FormatAlignRightIcon />
+          <Divider orientation="vertical" flexItem />
+          <FormatBoldIcon />
+          <FormatItalicIcon />
+        </Box>
+      </div>
       <br />
       <br />
       <br />
