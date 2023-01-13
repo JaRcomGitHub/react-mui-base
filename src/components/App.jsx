@@ -39,13 +39,14 @@ import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
 import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
 import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import NestedList from './NestedList';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const style = {
   width: '100%',
   maxWidth: 360,
-  bgcolor: 'background.paper',
+  bgcolor: 'lightBlue',
 };
 
 export const App = () => {
@@ -232,7 +233,7 @@ export const App = () => {
             width: 'fit-content',
             border: theme => `1px solid ${theme.palette.divider}`,
             borderRadius: 1,
-            bgcolor: 'background.paper',
+            bgcolor: deepPurple[500],
             color: 'text.secondary',
             '& svg': {
               m: 1.5,
@@ -251,6 +252,7 @@ export const App = () => {
         </Box>
       </div>
       <br />
+      <NestedList />
       <br />
       <br />
       <br />
