@@ -40,6 +40,7 @@ import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
 import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import NestedList from './NestedList';
+import StickySubHeader from './StickySubHeader';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -254,6 +255,7 @@ export const App = () => {
       <br />
       <NestedList />
       <br />
+      <StickySubHeader />
       <br />
       <br />
       <br />
