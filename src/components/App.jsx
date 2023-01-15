@@ -41,6 +41,7 @@ import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import NestedList from './NestedList';
 import StickySubHeader from './StickySubHeader';
+import Customization from './Customization';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -257,6 +258,7 @@ export const App = () => {
       <br />
       <StickySubHeader />
       <br />
+      <Customization />
       <br />
       <br />
       <br />
