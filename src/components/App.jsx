@@ -42,6 +42,7 @@ import FormatItalicIcon from '@mui/icons-material/FormatItalic';
 import NestedList from './NestedList';
 import StickySubHeader from './StickySubHeader';
 import Customization from './Customization';
+import TableSortingAndSelecting from './TableSortingAndSelecting';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -260,6 +261,7 @@ export const App = () => {
       <br />
       <Customization />
       <br />
+      <TableSortingAndSelecting />
       <br />
       <br />
       <br />
