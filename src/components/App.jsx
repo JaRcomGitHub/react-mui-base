@@ -43,6 +43,7 @@ import NestedList from './NestedList';
 import StickySubHeader from './StickySubHeader';
 import Customization from './Customization';
 import TableSortingAndSelecting from './TableSortingAndSelecting';
+import PositionedTooltips from './Tooltips';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -263,6 +264,7 @@ export const App = () => {
       <br />
       <TableSortingAndSelecting />
       <br />
+      <PositionedTooltips />
       <br />
       <br />
       <br />
