@@ -44,6 +44,7 @@ import StickySubHeader from './StickySubHeader';
 import Customization from './Customization';
 import TableSortingAndSelecting from './TableSortingAndSelecting';
 import PositionedTooltips from './Tooltips';
+import Alert from './Alert';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -266,6 +267,7 @@ export const App = () => {
       <br />
       <PositionedTooltips />
       <br />
+      <Alert />
       <br />
       <br />
       <br />
