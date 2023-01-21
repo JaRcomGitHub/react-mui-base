@@ -46,6 +46,7 @@ import TableSortingAndSelecting from './TableSortingAndSelecting';
 import PositionedTooltips from './Tooltips';
 import Alert from './Alert';
 import TransitionAlerts from './Transition';
+import SimpleBackdrop from './BackdropExample';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -272,6 +273,7 @@ export const App = () => {
       <br />
       <TransitionAlerts />
       <br />
+      <SimpleBackdrop />
       <br />
       <br />
       <br />
