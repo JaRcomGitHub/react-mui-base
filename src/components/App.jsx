@@ -47,6 +47,7 @@ import PositionedTooltips from './Tooltips';
 import Alert from './Alert';
 import TransitionAlerts from './Transition';
 import SimpleBackdrop from './BackdropExample';
+import SimpleDialog from './SimpleDialog';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -275,6 +276,7 @@ export const App = () => {
       <br />
       <SimpleBackdrop />
       <br />
+      <SimpleDialog />
       <br />
       <br />
       <br />
