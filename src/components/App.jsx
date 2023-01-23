@@ -48,6 +48,7 @@ import Alert from './Alert';
 import TransitionAlerts from './Transition';
 import SimpleBackdrop from './BackdropExample';
 import SimpleDialog from './SimpleDialog';
+import AlertDialog from './AlertDialog';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -277,6 +278,19 @@ export const App = () => {
       <SimpleBackdrop />
       <br />
       <SimpleDialog />
+      <br />
+      <AlertDialog />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
