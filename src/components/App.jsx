@@ -50,6 +50,7 @@ import SimpleBackdrop from './BackdropExample';
 import SimpleDialog from './SimpleDialog';
 import AlertDialog from './AlertDialog';
 import CircularColor from './CircularColor';
+import CircularIntegration from './InteractiveIntegration';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -284,6 +285,7 @@ export const App = () => {
       <br />
       <CircularColor />
       <br />
+      <CircularIntegration />
       <br />
       <br />
       <br />
